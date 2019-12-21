@@ -4,9 +4,10 @@ Config file to s2i datagrid official img (see more: based on original applicatio
 and datagrid documentation: https://access.redhat.com/documentation/en-us/red_hat_data_grid/7.1/pdf/data_grid_for_openshift/Red_Hat_JBoss_Data_Grid-7.1-Data_Grid_for_OpenShift-en-US.pdf
 
 1- create secret "datagrid-app-secret" containing certs .jceks andthe keystore needed for this template.
+
 2- import template "template.yaml"
 
-Create the app using Openshift web console (from catalog) or using `oc` CLI (replace credentials with yours) and replace your onw repo with custom openshift-clustered.xml.
+3- Create the app using Openshift web console (from catalog) or using `oc` CLI (replace credentials with yours) and replace your onw repo with custom openshift-clustered.xml.
 
 ```bash
 oc new-app --template='template": "custom-datagrid71-persistent-template' \
