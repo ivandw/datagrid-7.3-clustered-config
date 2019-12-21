@@ -1,8 +1,9 @@
-# datagrid-7.1-clustered-config based on original application template for ocp https://github.com/jboss-openshift/application-templates/blob/master/docs/datagrid/datagrid71-postgresql-persistent.adoc
+# datagrid-7.1-clustered-custom-config 
 
-config file to s2i datagrid official img
+Config file to s2i datagrid official img (see more: based on original application template for ocp https://github.com/jboss-openshift/application-templates/blob/master/docs/datagrid/datagrid71-postgresql-persistent.adoc)
+and datagrid documentation: https://access.redhat.com/documentation/en-us/red_hat_data_grid/7.1/pdf/data_grid_for_openshift/Red_Hat_JBoss_Data_Grid-7.1-Data_Grid_for_OpenShift-en-US.pdf
 
-1- create "datagrid-app-secret" containing certs .jceks andthe keystore needed for this template.
+1- create secret "datagrid-app-secret" containing certs .jceks andthe keystore needed for this template.
 2- import template "template.yaml"
 
 Create the app using Openshift web console (from catalog) or using `oc` CLI (replace credentials with yours) and replace your onw repo with custom openshift-clustered.xml.
