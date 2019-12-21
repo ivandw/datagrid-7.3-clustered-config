@@ -15,5 +15,5 @@ oc new-app --template='template": "custom-datagrid71-persistent-template' \
 --param=SOURCE_REPOSITORY_URL='https://github.com/ivandw/datagrid-clustered-config' \
 --param=USERNAME='admin' \
 --param=PASSWORD='Data@grid1' \
---param=JAVA_OPTS_APPEND='-Dcustom_opts_mark=custom-dg-cluster -Xms512m -Xmx512m'
+--param=JAVA_OPTS_APPEND='-Dcustom_opts_mark=datagrid-app -Xms512m -Xmx512m'
 ```
