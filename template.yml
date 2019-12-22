@@ -691,6 +691,11 @@
                                         "containerPort": 8778,
                                         "protocol": "TCP"
                                     },
+                                     {
+                                        "name": "prometheus",
+                                        "containerPort": 9404,
+                                        "protocol": "TCP"
+                                    },
                                     {
                                         "name": "http",
                                         "containerPort": 8080,
