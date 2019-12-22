@@ -1,0 +1,26 @@
+env variables to add to DC:
+
+- name: JAVA_OPTS_APPEND
+            value: "-javaagent:/opt/datagrid/jmx-prometheus.jar=9404:/opt/datagrid/prometheus/config.yaml"
+
+add this to expose 9404 svc:
+
+- containerPort: 8778
+            name: jolokia
+            protocol: TCP
+- containerPort: 9404
+            name: prometheus
+            protocol: TCP
+            
+add this to set jmx configmap as a volume:
+
+ volumeMounts:
+            - mountPath: /opt/datagrid/prometheus
+              name: prometheus-volume
+        terminationGracePeriodSeconds: 60
+        volumes:
+          - name: prometheus-volume
+            configMap:
+              defaultMode: 420
+              name: datagrid-prometheus
+            
