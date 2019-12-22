@@ -12,8 +12,12 @@ add this to expose 9404 svc:
             name: prometheus
             protocol: TCP
             
-add this to set jmx configmap as a volume:
 
+
+Create the ConfigMap with JMX Exporter
+oc create configmap datagrid-jmx --from-file=config.yaml
+
+add this to set jmx configmap as a volume:
  volumeMounts:
             - mountPath: /opt/datagrid/prometheus
               name: prometheus-volume
@@ -23,4 +27,8 @@ add this to set jmx configmap as a volume:
             configMap:
               defaultMode: 420
               name: datagrid-prometheus
-            
+ common commands:
+ 
+ Build the custom Data Grid image including JMX Exporter Prometheus
+oc new-build . --name=datagrid72-prometheus --strategy=docker
+
