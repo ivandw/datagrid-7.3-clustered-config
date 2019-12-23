@@ -1,4 +1,4 @@
-# Monitor your  previously created datagrid (with resources on this repo) with prometheus and grafana
+# Monitoring your previously created datagrid (with resources on this repo) with prometheus and grafana
 
 you need to have a prometheus and grafana working instances, and import the infinispan dashboard
 
