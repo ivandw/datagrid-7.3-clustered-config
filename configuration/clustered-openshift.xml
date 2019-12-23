@@ -211,7 +211,7 @@
                 <distributed-cache name="client-information" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="client-key-relation" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="client-products" configuration="base_dist_jdbc_cache_config"/>
-				<distributed-cache name="reference-data" configuration="base_dist_jdbc_cache_config"/>
+		<distributed-cache name="reference-data" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="evaluation-requests" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="host-pom-relation" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="office-users" configuration="base_dist_jdbc_cache_config"/>
