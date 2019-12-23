@@ -1,3 +1,5 @@
+# Monitor your  previously created datagrid (with resources on this repo) with prometheus/grafana
+
 env variables to add to DC (not added to template, if config is not set, dc crashes):
 
 - name: JAVA_OPTS_APPEND
