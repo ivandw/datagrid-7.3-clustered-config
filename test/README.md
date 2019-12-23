@@ -1,7 +1,8 @@
-# Monitor your  previously created datagrid (with resources on this repo) with prometheus/grafana
+# Monitor your  previously created datagrid (with resources on this repo) with prometheus and grafana
+
+you need to have a prometheus and grafana working instances, and import the infinispan dashboard
 
 env variables to add to DC (not added to template, if config is not set, dc crashes):
-
 - name: JAVA_OPTS_APPEND
   ​    value: "-javaagent:/opt/datagrid/jmx-prometheus.jar=9404:/opt/datagrid/prometheus/config.yaml"
 
