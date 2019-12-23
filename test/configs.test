@@ -31,4 +31,6 @@ add this to set jmx configmap as a volume:
  
  Build the custom Data Grid image including JMX Exporter Prometheus
 oc new-build . --name=datagrid72-prometheus --strategy=docker
+lauch the build
+oc start-build datagrid71-prometheus --from-file=./Dockerfile
 
