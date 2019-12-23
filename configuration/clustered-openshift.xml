@@ -208,8 +208,13 @@
                        <write-behind modification-queue-size="1024" thread-pool-size="1"/>
                     </string-keyed-jdbc-store>
                 </distributed-cache-configuration>
-                <distributed-cache name="pepe" configuration="base_dist_jdbc_cache_config"/>
-                <distributed-cache name="papa" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="client-information" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="client-key-relation" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="client-products" configuration="base_dist_jdbc_cache_config"/>
+				<distributed-cache name="reference-data" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="evaluation-requests" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="host-pom-relation" configuration="base_dist_jdbc_cache_config"/>
+                <distributed-cache name="office-users" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="demo" configuration="base_dist_jdbc_cache_config"/>
                 <distributed-cache name="default_memcached" mode="SYNC"/>
             </cache-container>            
