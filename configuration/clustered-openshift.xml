@@ -129,7 +129,7 @@
             </logger>
             <!-- ##ACCESS_LOG_HANDLER## -->
             <root-logger>
-                <level name="INFO"/>
+                <level name="DEBUG"/>
                 <handlers>
                     <handler name="CONSOLE"/>
                 </handlers>
